@@ -14,9 +14,9 @@ driver = webdriver.Chrome(options = options, executable_path='/usr/local/bin/chr
 
 driver.get("https://eoportal.eumetsat.int/userMgmt/login.faces")
 time.sleep(5)
-driver.find_element_by_id("BODY:FRM:LI-1").send_keys("sseteam")
-driver.find_element_by_id ("BODY:FRM:LI-2").send_keys("DsLWSecG")
-driver.find_element_by_id("BODY:FRM:myOwnSubmitButton_").click()
+driver.find_element_by_id("username").send_keys("")
+driver.find_element_by_id ("password").send_keys("")
+driver.find_element_by_name("submit").click()
 time.sleep(3)
 order_list = "//table"
 
